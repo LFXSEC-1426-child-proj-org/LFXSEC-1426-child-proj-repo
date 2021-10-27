@@ -18,6 +18,7 @@ public class Assignment1 extends FacebookUtil{
 
 	@BeforeClass
 	public void beforeTest() {
+		String password = "djf834903jfd";
 		tdFilename = "facebook.properties";
 		String reportFilename = "facebook"+getTimestamp()+".html";
 		report = new ExtentReports(System.getProperty("user.dir") + "\\reports\\facebook\\"+reportFilename);
@@ -29,6 +30,7 @@ public class Assignment1 extends FacebookUtil{
 	public void task() throws FileNotFoundException, IOException {
 		
 		try {
+			String password = "djf834903j;
 			launchBrowser(tdbrowser);	
 		
 			navigateToFacebookPage();
